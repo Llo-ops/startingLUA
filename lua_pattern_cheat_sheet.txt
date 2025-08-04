@@ -1,0 +1,77 @@
+
+==============================
+     LUA PATTERN CHEAT SHEET
+==============================
+
+Lua has a lightweight pattern matching system used in:
+- string.gsub
+- string.match
+- string.find
+
+---------------------------------
+COMMON PATTERN ELEMENTS
+---------------------------------
+
+Pattern  | Meaning
+-------- | --------------------------------------------------
+.        | Any character except newline
+%a       | Any letter (A-Z or a-z)
+%d       | Any digit (0–9)
+%s       | Any whitespace (space, tab, newline)
+%w       | Any alphanumeric (A-Z, a-z, 0–9)
+%p       | Any punctuation character
+%c       | Any control character (ASCII 0–31)
+%l       | Any lowercase letter
+%u       | Any uppercase letter
+%x       | Any hexadecimal digit (0–9, a–f)
+
+---------------------------------
+QUANTIFIERS (REPETITION)
+---------------------------------
+
++        | 1 or more repetitions      (%d+ matches 123)
+*        | 0 or more repetitions      (%a* matches "", "abc")
+-        | 0 or more (non-greedy)     (.-end matches shortest to 'end')
+?        | 0 or 1 occurrence          (a? matches "a" or "")
+
+---------------------------------
+CHARACTER SETS
+---------------------------------
+
+[abc]    | Matches a, b, or c
+[^abc]   | Matches anything EXCEPT a, b, or c
+[a-z]    | Any lowercase letter
+[A-Z0-9] | Uppercase letters or digits
+
+---------------------------------
+ESCAPING SPECIAL CHARACTERS
+---------------------------------
+
+Escape special characters using %
+
+Character | Escape as
+--------- | ----------
+.         | %.
+%         | %%
++         | %+
+-         | %-
+*         | %*
+?         | %?
+( )       | %( %)
+
+---------------------------------
+EXAMPLES
+---------------------------------
+
+Remove punctuation:
+    string.gsub("Hello, world!", "%p", "") --> "Hello world"
+
+Keep only digits:
+    string.gsub("Phone: 0928-123-4567", "%D", "") --> "09281234567"
+
+Replace all vowels with '*':
+    string.gsub("hello", "[aeiou]", "*") --> "h*ll*"
+
+---------------------------------
+FULL REFERENCE
+https://www.lua.org/manual/5.4/manual.html#6.4.1

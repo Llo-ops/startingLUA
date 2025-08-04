@@ -1,0 +1,69 @@
+
+Icon CheckList:
+
+
+==============================
+      LUA CHALLENGES LIST
+==============================
+
+You can follow either (or both) of these tracks:
+
+---------------------------------
+TRACK 1: PURE LUA CHALLENGES
+---------------------------------
+
+🟢 Easy
+      1. Print 1 to 100
+2. FizzBuzz
+3. Palindrome Checker
+4. Simple Calculator
+5. Guess the Number
+
+🟡 Medium
+6. Todo List Manager (CLI)
+7. Basic Inventory System
+8. Text Adventure Game
+9. Table Sorting
+10. JSON Parser (Manual)
+
+🔴 Hard
+11. Mini Shell
+12. Custom Class System
+13. Simple Event System
+14. Simple Interpreter
+15. Make Your Own Module System
+
+
+---------------------------------------------
+TRACK 2: GAME DEVELOPMENT (LOVE2D)
+---------------------------------------------
+
+🟢 Easy
+1. Draw a Rectangle
+2. Move with Arrow Keys
+3. Bouncing Ball
+4. Click Detector
+5. Score Counter
+
+🟡 Medium
+6. Pong Clone
+7. Simple Platformer
+8. Inventory Bar (UI)
+9. Enemy AI
+10. Collision Detection System
+
+🔴 Hard
+11. Bullet Hell Game
+12. Top-Down Shooter
+13. Roguelike Dungeon Generator
+14. Save/Load System
+15. Mini Game Engine
+
+
+---------------------------------------------
+Recommended Resources:
+---------------------------------------------
+- Book: "Programming in Lua" (free online)
+- Love2D wiki: https://love2d.org/wiki/
+- Lua cheatsheet: https://learnxinyminutes.com/docs/lua/
+
